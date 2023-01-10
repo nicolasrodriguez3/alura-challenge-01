@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Challenge ONE - Encriptador de texto</title>
+	</head>
+	<body>
+		<header>
+			<a href="#"><img src="./assets/logo.svg" alt="Logo Alura" /></a>
+		</header>
+		<main>
+			<div class="text-container">
+				<div class="icons">
+					<button id="delete-text"><img src="assets/bx-eraser.svg"></button>
+					<button id="paste-text"><img src="assets/bx-paste.svg"></button>
+				</div>
+				<textarea id="text-user" rows="5" placeholder="Ingrese el texto aquí"></textarea>
+
+				<small><img src="./assets/exclamation.svg" /> Solo letras minusculas y sin acentos</small>
+				<div class="buttons">
+					<button class="btn-primary" id="btn-encriptar">Encriptar</button>
+					<button id="btn-desencriptar">Desencriptar</button>
+				</div>
+			</div>
+
+			<div class="resultado" id="resultado">
+				<img src="assets/Muñeco.svg">
+				<h3>Ningún mensaje fue encontrado</h3>
+				<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+			</div>
+		</main>
+		<footer>Codeado por Nicolás Rodriguez</footer>
+		<script src="app.js"></script>
+	</body>
+</html>

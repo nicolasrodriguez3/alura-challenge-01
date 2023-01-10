@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+	--primary-dark: #0a3871;
+	--primary-dark-50: rgba(10, 56, 113, .5);
+	--secondary: #d8dfe8;
+	--secondary-50: rgba(216, 223, 232,.5);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: "Inter", sans-serif;
+	color: var(--primary-dark);
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+header{
+	width: 100%;
+	max-width: 1400px;
+}
+
+main {
+	flex: 1;
+}
+
+.text-container{
+	position: relative;
+	padding-top: 2rem;
+}
+
+textarea {
+	padding-right: 3.5rem;
+	border: none;
+	background: none;
+	resize: none;
+	width: 100%;
+	font-size: 32px;
+	line-height: 150%;
+	color: inherit;
+	outline: none;
+}
+small {
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0 2rem;
+	gap: 1rem;
+}
+
+button {
+	background-color: #d8dfe8;
+	padding: 1.5rem;
+	flex: 1;
+	border: 1px solid var(--primary-dark);
+	border-radius: 24px;
+	cursor: pointer;
+}
+button:active{
+	transform: scale(.95);
+}
+
+.btn-primary {
+	background-color: var(--primary-dark);
+	color: #fff;
+}
+
+.icons{
+	position: absolute;
+	right: 0;
+	top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.icons button{
+	padding: .8rem;
+	background-color: var(--secondary-50);
+}
+.icons button:hover{
+	background-color: var(--secondary);
+}
+
+.resultado {
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	background-color: #fff;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	margin: 3rem 0;
+}
+.resultado h3{
+	font-size: 24px;
+}
+.resultado img{
+	display: none;
+}
+.resultado .text-result {
+	flex: 1;
+	font-size: 24px;
+}
+.resultado button {
+	flex: 0;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+	header{
+		padding-top: 3rem;
+	}
+	.buttons {
+		flex-direction: row;
+	}
+	textarea {
+		min-height: 400px;
+	}
+}
+@media (min-width: 992px) {
+	header{
+		padding-left: 3vw;
+		padding-top: 1rem;
+	}
+	main {
+		display: flex;
+		gap: 2rem;
+		padding: 0 3rem;
+		max-width: 1400px; 
+		width: 100%;
+		margin: 0 auto;
+	}
+	.buttons {
+		flex-direction: row;
+	}
+
+	.text-container {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	textarea {
+		flex: 1;
+	}
+	.resultado {
+		width: 35%;
+		margin: 0;
+	}
+	.resultado img{
+		display: block;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+}
