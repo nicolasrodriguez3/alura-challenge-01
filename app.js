@@ -135,4 +135,7 @@ pasteBtn.addEventListener("click", async () => {
 // Boton borrar
 deleteBtn.addEventListener("click", () => {
 	textUser.value = ""
+	resultado.innerHTML = `<img src="assets/Muñeco.svg">
+	<h3>Ningún mensaje fue encontrado</h3>
+	<p>Ingresa el texto que desees encriptar o desencriptar.</p>`
 })
